@@ -1,10 +1,17 @@
 require_relative 'spec_helper'
 
+# Sort the below array without using Array.sort
+#
+# For example:
+# array1 = [10, 55, 2, 7]
+#
+# will return
+# [2, 7, 10, 55]
+#
+
 array = [6,2,5,2,1,7,4,3,9,8,0]
-
-
-
 sorted_array = []
+
 
 # The specs to test the exercise
 RSpec.describe 'Sorting an array' do

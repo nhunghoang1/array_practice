@@ -1,6 +1,8 @@
 require_relative 'spec_helper'
 
 # Count each occurance of each value in an array.
+# Hint: The output will be a hash. The key will be the number in the array
+# and the value will be the count
 #
 # For example:
 # [1,1,5,5,5,8]
@@ -10,8 +12,9 @@ require_relative 'spec_helper'
 #
 
 array = [0,5,3,7,9,3,5,7,9,2,1,4,7,9,3,1,9,0]
-
 count_elements_array = {}
+
+
 
 # The specs to test the exercise
 RSpec.describe 'Count the occurrences' do

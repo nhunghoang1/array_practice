@@ -9,7 +9,6 @@ require_relative 'spec_helper'
 # [1,5,8]
 #
 
-
 array = [0,1,2,4,4,7,1,4]
 unique_array = []
 
