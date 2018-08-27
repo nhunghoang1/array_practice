@@ -10,12 +10,12 @@ require_relative 'spec_helper'
 # [true, false, true]
 
 array = [[1,5,1,3], [10], [0]]
-equal_ten? = []
+equal_ten = []
 
 # The specs to test the exercise
 RSpec.describe 'Finding the second largest number in an array' do
   it 'will return the second largest number' do
     answer = [true, true, false]
-    expect(equal_ten?).to eq(answer)
+    expect(equal_ten).to eq(answer)
   end
 end

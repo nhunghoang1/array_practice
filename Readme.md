@@ -6,8 +6,11 @@ A few ruby `Array` exercises to learn some simple iteration
 
 clone this repo
 
-Then cd into the directory and `bundle`
-then type `rspec`
+`cd` into the directory
+
+type the command `bundle` on the command line
+
+then type `rspec` on the command line
 
 All examples are in the `./spec` directory
 
