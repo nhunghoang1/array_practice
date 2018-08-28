@@ -1,6 +1,8 @@
 RSpec.configure do |config|
+  config.fail_fast = true
+
   config.expect_with :rspec do |expectations|
-    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+    expectations.include_chain_clauses_in_custom_matcher_descriptions = false
   end
 
   config.mock_with :rspec do |mocks|
