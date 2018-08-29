@@ -12,6 +12,12 @@ require_relative 'spec_helper'
 array = %w(one two three four five six seven eight nine ten)
 reversed_array = []
 
+length = array.length - 1
+
+length.downto(0) do |number|
+	reversed_array << array[number]
+end
+
 
 
 # The specs to test the exercise

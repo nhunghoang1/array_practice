@@ -9,14 +9,18 @@ require_relative 'spec_helper'
 # 6
 #
 
-array = [0,5,10,3,2,5]
+array = [0,5,10,3,4,5]
 length_of_array = 0
+
+array.each do |number|
+	length_of_array = length_of_array + 1
+end
 
 
 
 # The specs to test the exercise
 RSpec.describe 'Getting the length of the array' do
   it 'will provide the correct length' do
-    expect(length_of_array).to eq(5)
+    expect(length_of_array).to eq(6)
   end
 end

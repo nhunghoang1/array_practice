@@ -14,6 +14,15 @@ array = [1,2,4,4,7,1,4,52,126,23,8]
 min_value = 0
 max_value = 0
 
+array.each do |number|
+	
+	if number == 1
+		min_value << number
+	else
+		number == 126
+		max_value << number
+end
+
 # The specs to test the exercise
 RSpec.describe 'Find the lowest and highest value in an array' do
   context 'without using Array.min and Array.max' do
