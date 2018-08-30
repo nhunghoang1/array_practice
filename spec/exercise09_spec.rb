@@ -21,8 +21,6 @@ end
 
 # duplicate_array = Array.new(array)
 
-
-
 # The specs to test the exercise
 RSpec.describe 'Duplicating an array' do
   it 'will duplicate each item of an array in a new array' do
