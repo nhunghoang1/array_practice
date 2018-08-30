@@ -24,3 +24,5 @@ RSpec.describe 'Getting the length of the array' do
     expect(length_of_array).to eq(6)
   end
 end
+
+

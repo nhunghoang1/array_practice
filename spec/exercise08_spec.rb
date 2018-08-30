@@ -12,6 +12,12 @@ require_relative 'spec_helper'
 array = %w(hello my name is naughty baby julia)
 array_with_naughty_removed = []
 
+array.each do |word|
+	if word != "naughty"
+		array_with_naughty_removed << word
+	end
+end
+
 
 
 # The specs to test the exercise

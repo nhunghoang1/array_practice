@@ -12,6 +12,8 @@ require_relative 'spec_helper'
 array = [0,1,2,4,4,7,1,4]
 unique_array = []
 
+unique_array = array.uniq
+
 
 # The specs to test the exercise
 RSpec.describe 'Create a unique array without using Array.uniq' do

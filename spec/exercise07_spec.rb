@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-# Which element in the array includes the name baby?
+# Which element in the array includes the word baby?
 #
 # For example:
 # array = %w(julia is a bouncing baby)
@@ -17,6 +17,13 @@ require_relative 'spec_helper'
 
 array = %w(hello my name is baby julia)
 baby_index = 0
+
+array.each_with_index do |word, index|
+	baby_index = index if word == "baby"
+end
+
+#or
+# array.index("baby")
 
 # The specs to test the exercise
 RSpec.describe 'Indexing the array' do

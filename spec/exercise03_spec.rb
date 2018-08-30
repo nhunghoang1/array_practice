@@ -8,19 +8,20 @@ require_relative 'spec_helper'
 # min_value will be 1
 # max_value will be 8
 
-
 array = [1,2,4,4,7,1,4,52,126,23,8]
 
-min_value = 0
+min_value = 50000
 max_value = 0
 
 array.each do |number|
-	
-	if number == 1
-		min_value << number
-	else
-		number == 126
-		max_value << number
+
+  if number < min_value
+    min_value = number
+  end
+
+  if number > max_value
+    max_value = number 
+  end
 end
 
 # The specs to test the exercise

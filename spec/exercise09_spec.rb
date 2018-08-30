@@ -11,8 +11,15 @@ require_relative 'spec_helper'
 # ['julia', 'is', 'a', 'bouncing', 'baby']
 #
 
-array = %w(hello my name is naughty baby julia)
-duplicate_array = []
+# array = %w(hello my name is naughty baby julia)
+# duplicate_array = []
+
+# 	array.map {|a| a }
+
+# 	duplicate_array << a
+# # or
+
+# duplicate_array = Array.new(array)
 
 
 

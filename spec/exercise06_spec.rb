@@ -18,6 +18,15 @@ require_relative 'spec_helper'
 array = %w(hello my name is baby julia)
 contains_julia = false
 
+array.each do |word|
+
+	if word == "julia"
+		contains_julia = true
+	else 
+		false
+	end
+end
+
 
 
 # The specs to test the exercise
