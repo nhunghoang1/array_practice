@@ -11,13 +11,13 @@ require_relative 'spec_helper'
 # ['julia', 'is', 'a', 'bouncing', 'baby']
 #
 
-# array = %w(hello my name is naughty baby julia)
-# duplicate_array = []
+array = %w(hello my name is naughty baby julia)
 
-# 	array.map {|a| a }
+duplicate_array = array.map do |item| 
+	item
+end
 
-# 	duplicate_array << a
-# # or
+# or
 
 # duplicate_array = Array.new(array)
 
@@ -26,7 +26,7 @@ require_relative 'spec_helper'
 # The specs to test the exercise
 RSpec.describe 'Duplicating an array' do
   it 'will duplicate each item of an array in a new array' do
-    expect(duplicate_array).to eq(%w(hello my name is baby julia))
-    expect(duplicate_array).to not_be(array)
+    expect(duplicate_array).to eq(%w(hello my name is naughty baby julia))
+    expect(duplicate_array).to_not be(array)
   end
 end
