@@ -12,13 +12,22 @@ require_relative 'spec_helper'
 array = %w(hello my name is naughty baby julia)
 array_with_naughty_removed = []
 
-array.each do |word|
-	if word != "naughty"
-		array_with_naughty_removed << word
-	end
+# array.each do |word|
+# 	if word != "naughty"
+# 		array_with_naughty_removed << word
+# 	end
+# end
+
+## another way is:
+array_with_naughty_removed = array.select do |word|
+	word != 'naughty'
 end
 
+## OR
 
+array_with_naughty_removed = array.reject do |word|
+	word == 'naughty'
+end
 
 # The specs to test the exercise
 RSpec.describe 'Removing an item in an array' do
