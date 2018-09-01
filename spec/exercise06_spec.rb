@@ -19,7 +19,6 @@ array = %w(hello my name is baby julia)
 contains_julia = false
 
 array.each do |word|
-
 	if word == "julia"
 		contains_julia = true
 	else 

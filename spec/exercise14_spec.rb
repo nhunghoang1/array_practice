@@ -12,6 +12,12 @@ require_relative 'spec_helper'
 array = [1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 multiples_of_two = []
 
+array.each do |number|
+	if number % 2 == 0
+		multiples_of_two << number
+	end
+end
+
 
 # The specs to test the exercise
 RSpec.describe 'Find multiples of 2' do

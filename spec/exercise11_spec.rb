@@ -15,6 +15,20 @@ array2 = [126,74,123,98,345,96,0,12,5,8,3]
 
 new_array = []
 
+array.each do |number1|
+	array2.each do |number2|
+		if number1 == number2
+			new_array << number1
+		end
+	end
+end
+
+
+
+
+
+
+
 # The specs to test the exercise
 RSpec.describe 'Comparing Arrays' do
   it 'will return an array of similarities' do
@@ -22,3 +36,8 @@ RSpec.describe 'Comparing Arrays' do
     expect(new_array).to eq(answer)
   end
 end
+
+
+# loop through array1 
+# loop through array2
+# if the number from array1 is the same with the number in array2, put that number in new array

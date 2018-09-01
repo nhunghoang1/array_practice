@@ -14,6 +14,12 @@ array = %w(airship halfway fezzes multiples two statue)
 first = []
 last = []
 
+first = array[0]
+last = array[-1]
+
+
+
+
 
 # The specs to test the exercise
 RSpec.describe 'Find first and last elements' do
@@ -25,3 +31,8 @@ RSpec.describe 'Find first and last elements' do
     expect(last).to eq("statue")
   end
 end
+
+
+# length of the array
+# length of the array upto length
+# length of the array down to 0
